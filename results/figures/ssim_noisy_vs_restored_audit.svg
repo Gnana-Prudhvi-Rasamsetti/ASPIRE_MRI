@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1e293b}.muted{fill:#64748b}.grid{stroke:#dbe3ec;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.2}</style>
+<text x="600.0" y="42" text-anchor="middle" font-size="25" font-weight="700">SSIM before and after adaptive restoration</text>
+<text x="600.0" y="70" text-anchor="middle" font-size="13" class="muted">Independent-seed audit · subject-mean SSIM on the held-out test subjects</text>
+<line x1="105.0" y1="510.0" x2="405.0" y2="510.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="514.0" text-anchor="end" font-size="11" fill="#64748b">0.4</text>
+<line x1="105.0" y1="450.0" x2="405.0" y2="450.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="454.0" text-anchor="end" font-size="11" fill="#64748b">0.5</text>
+<line x1="105.0" y1="390.0" x2="405.0" y2="390.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="394.0" text-anchor="end" font-size="11" fill="#64748b">0.6</text>
+<line x1="105.0" y1="330.0" x2="405.0" y2="330.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="334.0" text-anchor="end" font-size="11" fill="#64748b">0.7</text>
+<line x1="105.0" y1="270.0" x2="405.0" y2="270.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="274.0" text-anchor="end" font-size="11" fill="#64748b">0.8</text>
+<line x1="105.0" y1="210.0" x2="405.0" y2="210.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="214.0" text-anchor="end" font-size="11" fill="#64748b">0.9</text>
+<line x1="105.0" y1="150.0" x2="405.0" y2="150.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="154.0" text-anchor="end" font-size="11" fill="#64748b">1.0</text>
+<line x1="105.0" y1="150.0" x2="105.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="105.0" y1="540.0" x2="405.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="255.0" y="122.0" text-anchor="middle" font-size="16" fill="#0284c7" font-weight="700">Gaussian</text>
+<line x1="105.0" y1="278.2" x2="205.0" y2="341.4" stroke="#94a3b8" stroke-width="3"/>
+<line x1="205.0" y1="341.4" x2="405.0" y2="425.8" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="105.0" cy="278.2" r="5.5" fill="#94a3b8"/>
+<text x="105.0" y="267.2" text-anchor="middle" font-size="9" fill="#94a3b8">0.786</text>
+<circle cx="205.0" cy="341.4" r="5.5" fill="#94a3b8"/>
+<text x="205.0" y="330.4" text-anchor="middle" font-size="9" fill="#94a3b8">0.681</text>
+<circle cx="405.0" cy="425.8" r="5.5" fill="#94a3b8"/>
+<text x="405.0" y="414.8" text-anchor="middle" font-size="9" fill="#94a3b8">0.540</text>
+<line x1="105.0" y1="183.2" x2="205.0" y2="186.9" stroke="#059669" stroke-width="3"/>
+<line x1="205.0" y1="186.9" x2="405.0" y2="193.6" stroke="#059669" stroke-width="3"/>
+<circle cx="105.0" cy="183.2" r="5.5" fill="#059669"/>
+<text x="105.0" y="172.2" text-anchor="middle" font-size="9" fill="#059669">0.945</text>
+<circle cx="205.0" cy="186.9" r="5.5" fill="#059669"/>
+<text x="205.0" y="175.9" text-anchor="middle" font-size="9" fill="#059669">0.939</text>
+<circle cx="405.0" cy="193.6" r="5.5" fill="#059669"/>
+<text x="405.0" y="182.6" text-anchor="middle" font-size="9" fill="#059669">0.927</text>
+<text x="105.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.02</text>
+<text x="205.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.03</text>
+<text x="405.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.05</text>
+<text x="255.0" y="588.0" text-anchor="middle" font-size="11">Noise severity (σ)</text>
+<line x1="475.0" y1="510.0" x2="775.0" y2="510.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="514.0" text-anchor="end" font-size="11" fill="#64748b">0.4</text>
+<line x1="475.0" y1="450.0" x2="775.0" y2="450.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="454.0" text-anchor="end" font-size="11" fill="#64748b">0.5</text>
+<line x1="475.0" y1="390.0" x2="775.0" y2="390.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="394.0" text-anchor="end" font-size="11" fill="#64748b">0.6</text>
+<line x1="475.0" y1="330.0" x2="775.0" y2="330.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="334.0" text-anchor="end" font-size="11" fill="#64748b">0.7</text>
+<line x1="475.0" y1="270.0" x2="775.0" y2="270.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="274.0" text-anchor="end" font-size="11" fill="#64748b">0.8</text>
+<line x1="475.0" y1="210.0" x2="775.0" y2="210.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="214.0" text-anchor="end" font-size="11" fill="#64748b">0.9</text>
+<line x1="475.0" y1="150.0" x2="775.0" y2="150.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="463.0" y="154.0" text-anchor="end" font-size="11" fill="#64748b">1.0</text>
+<line x1="475.0" y1="150.0" x2="475.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="475.0" y1="540.0" x2="775.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="625.0" y="122.0" text-anchor="middle" font-size="16" fill="#db2777" font-weight="700">Rician</text>
+<line x1="475.0" y1="387.4" x2="575.0" y2="430.4" stroke="#94a3b8" stroke-width="3"/>
+<line x1="575.0" y1="430.4" x2="775.0" y2="476.4" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="475.0" cy="387.4" r="5.5" fill="#94a3b8"/>
+<text x="475.0" y="376.4" text-anchor="middle" font-size="9" fill="#94a3b8">0.604</text>
+<circle cx="575.0" cy="430.4" r="5.5" fill="#94a3b8"/>
+<text x="575.0" y="419.4" text-anchor="middle" font-size="9" fill="#94a3b8">0.533</text>
+<circle cx="775.0" cy="476.4" r="5.5" fill="#94a3b8"/>
+<text x="775.0" y="465.4" text-anchor="middle" font-size="9" fill="#94a3b8">0.456</text>
+<line x1="475.0" y1="186.0" x2="575.0" y2="274.8" stroke="#059669" stroke-width="3"/>
+<line x1="575.0" y1="274.8" x2="775.0" y2="197.2" stroke="#059669" stroke-width="3"/>
+<circle cx="475.0" cy="186.0" r="5.5" fill="#059669"/>
+<text x="475.0" y="175.0" text-anchor="middle" font-size="9" fill="#059669">0.940</text>
+<circle cx="575.0" cy="274.8" r="5.5" fill="#059669"/>
+<text x="575.0" y="263.8" text-anchor="middle" font-size="9" fill="#059669">0.792</text>
+<circle cx="775.0" cy="197.2" r="5.5" fill="#059669"/>
+<text x="775.0" y="186.2" text-anchor="middle" font-size="9" fill="#059669">0.921</text>
+<text x="475.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.02</text>
+<text x="575.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.03</text>
+<text x="775.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.05</text>
+<text x="625.0" y="588.0" text-anchor="middle" font-size="11">Noise severity (σ)</text>
+<line x1="845.0" y1="510.0" x2="1145.0" y2="510.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="514.0" text-anchor="end" font-size="11" fill="#64748b">0.4</text>
+<line x1="845.0" y1="450.0" x2="1145.0" y2="450.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="454.0" text-anchor="end" font-size="11" fill="#64748b">0.5</text>
+<line x1="845.0" y1="390.0" x2="1145.0" y2="390.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="394.0" text-anchor="end" font-size="11" fill="#64748b">0.6</text>
+<line x1="845.0" y1="330.0" x2="1145.0" y2="330.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="334.0" text-anchor="end" font-size="11" fill="#64748b">0.7</text>
+<line x1="845.0" y1="270.0" x2="1145.0" y2="270.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="274.0" text-anchor="end" font-size="11" fill="#64748b">0.8</text>
+<line x1="845.0" y1="210.0" x2="1145.0" y2="210.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="214.0" text-anchor="end" font-size="11" fill="#64748b">0.9</text>
+<line x1="845.0" y1="150.0" x2="1145.0" y2="150.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="833.0" y="154.0" text-anchor="end" font-size="11" fill="#64748b">1.0</text>
+<line x1="845.0" y1="150.0" x2="845.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="845.0" y1="540.0" x2="1145.0" y2="540.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="995.0" y="122.0" text-anchor="middle" font-size="16" fill="#d97706" font-weight="700">Mixed</text>
+<line x1="845.0" y1="302.9" x2="945.0" y2="344.8" stroke="#94a3b8" stroke-width="3"/>
+<line x1="945.0" y1="344.8" x2="1145.0" y2="405.0" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="845.0" cy="302.9" r="5.5" fill="#94a3b8"/>
+<text x="845.0" y="291.9" text-anchor="middle" font-size="9" fill="#94a3b8">0.745</text>
+<circle cx="945.0" cy="344.8" r="5.5" fill="#94a3b8"/>
+<text x="945.0" y="333.8" text-anchor="middle" font-size="9" fill="#94a3b8">0.675</text>
+<circle cx="1145.0" cy="405.0" r="5.5" fill="#94a3b8"/>
+<text x="1145.0" y="394.0" text-anchor="middle" font-size="9" fill="#94a3b8">0.575</text>
+<line x1="845.0" y1="182.8" x2="945.0" y2="234.1" stroke="#059669" stroke-width="3"/>
+<line x1="945.0" y1="234.1" x2="1145.0" y2="191.4" stroke="#059669" stroke-width="3"/>
+<circle cx="845.0" cy="182.8" r="5.5" fill="#059669"/>
+<text x="845.0" y="171.8" text-anchor="middle" font-size="9" fill="#059669">0.945</text>
+<circle cx="945.0" cy="234.1" r="5.5" fill="#059669"/>
+<text x="945.0" y="223.1" text-anchor="middle" font-size="9" fill="#059669">0.860</text>
+<circle cx="1145.0" cy="191.4" r="5.5" fill="#059669"/>
+<text x="1145.0" y="180.4" text-anchor="middle" font-size="9" fill="#059669">0.931</text>
+<text x="845.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.02</text>
+<text x="945.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.03</text>
+<text x="1145.0" y="562.0" text-anchor="middle" font-size="10" fill="#64748b">0.05</text>
+<text x="995.0" y="588.0" text-anchor="middle" font-size="11">Noise severity (σ)</text>
+<line x1="380.0" y1="610.0" x2="415.0" y2="610.0" stroke="#94a3b8" stroke-width="3"/>
+<text x="424.0" y="615.0" text-anchor="start" font-size="12">Noisy input</text>
+<line x1="560.0" y1="610.0" x2="595.0" y2="610.0" stroke="#059669" stroke-width="3"/>
+<text x="604.0" y="615.0" text-anchor="start" font-size="12">Restored</text>
+<text x="600.0" y="662.0" text-anchor="middle" font-size="12" fill="#64748b">Restoration improves SSIM in every audited condition; values are descriptive test results, not tuning data.</text>
+</svg>

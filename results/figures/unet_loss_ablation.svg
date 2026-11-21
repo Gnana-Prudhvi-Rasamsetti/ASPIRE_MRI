@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1e293b}.muted{fill:#64748b}.grid{stroke:#dbe3ec;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.2}</style>
+<text x="600.0" y="42" text-anchor="middle" font-size="25" font-weight="700">U-Net loss ablation</text>
+<text x="600.0" y="70" text-anchor="middle" font-size="13" class="muted">Validation drives variant selection; test split is shown for final reporting</text>
+<line x1="105.0" y1="525.0" x2="405.0" y2="525.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="529.0" text-anchor="end" font-size="11" fill="#64748b">18.89</text>
+<line x1="105.0" y1="430.0" x2="405.0" y2="430.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="434.0" text-anchor="end" font-size="11" fill="#64748b">19.22</text>
+<line x1="105.0" y1="335.0" x2="405.0" y2="335.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="339.0" text-anchor="end" font-size="11" fill="#64748b">19.56</text>
+<line x1="105.0" y1="240.0" x2="405.0" y2="240.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="244.0" text-anchor="end" font-size="11" fill="#64748b">19.90</text>
+<line x1="105.0" y1="145.0" x2="405.0" y2="145.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="93.0" y="149.0" text-anchor="end" font-size="11" fill="#64748b">20.23</text>
+<line x1="105.0" y1="145.0" x2="105.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="105.0" y1="525.0" x2="405.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="255.0" y="118.0" text-anchor="middle" font-size="15" font-weight="700">RMSE (×10⁻³)</text>
+<rect x="125.0" y="443.8" width="27.0" height="81.2" rx="2" fill="#93c5fd"/>
+<text x="138.5" y="436.8" text-anchor="middle" font-size="9">19.18</text>
+<rect x="157.0" y="446.8" width="27.0" height="78.2" rx="2" fill="#2563eb"/>
+<text x="170.5" y="439.8" text-anchor="middle" font-size="9">19.17</text>
+<text x="155.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 155.0 560)">MSE</text>
+<rect x="225.0" y="223.2" width="27.0" height="301.8" rx="2" fill="#93c5fd"/>
+<text x="238.5" y="216.2" text-anchor="middle" font-size="9">19.96</text>
+<rect x="257.0" y="225.0" width="27.0" height="300.0" rx="2" fill="#2563eb"/>
+<text x="270.5" y="218.0" text-anchor="middle" font-size="9">19.95</text>
+<text x="255.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 255.0 560)">MSE + SSIM</text>
+<rect x="325.0" y="295.5" width="27.0" height="229.5" rx="2" fill="#93c5fd"/>
+<text x="338.5" y="288.5" text-anchor="middle" font-size="9">19.70</text>
+<rect x="357.0" y="298.1" width="27.0" height="226.9" rx="2" fill="#2563eb"/>
+<text x="370.5" y="291.1" text-anchor="middle" font-size="9">19.69</text>
+<text x="355.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 355.0 560)">MSE + SSIM + gradient</text>
+<line x1="480.0" y1="525.0" x2="780.0" y2="525.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="468.0" y="529.0" text-anchor="end" font-size="11" fill="#64748b">35.91</text>
+<line x1="480.0" y1="430.0" x2="780.0" y2="430.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="468.0" y="434.0" text-anchor="end" font-size="11" fill="#64748b">36.07</text>
+<line x1="480.0" y1="335.0" x2="780.0" y2="335.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="468.0" y="339.0" text-anchor="end" font-size="11" fill="#64748b">36.24</text>
+<line x1="480.0" y1="240.0" x2="780.0" y2="240.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="468.0" y="244.0" text-anchor="end" font-size="11" fill="#64748b">36.40</text>
+<line x1="480.0" y1="145.0" x2="780.0" y2="145.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="468.0" y="149.0" text-anchor="end" font-size="11" fill="#64748b">36.56</text>
+<line x1="480.0" y1="145.0" x2="480.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="480.0" y1="525.0" x2="780.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="630.0" y="118.0" text-anchor="middle" font-size="15" font-weight="700">PSNR (dB)</text>
+<rect x="500.0" y="270.6" width="27.0" height="254.4" rx="2" fill="#93c5fd"/>
+<text x="513.5" y="263.6" text-anchor="middle" font-size="9">36.35</text>
+<rect x="532.0" y="223.2" width="27.0" height="301.8" rx="2" fill="#2563eb"/>
+<text x="545.5" y="216.2" text-anchor="middle" font-size="9">36.43</text>
+<text x="530.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 530.0 560)">MSE</text>
+<rect x="600.0" y="446.8" width="27.0" height="78.2" rx="2" fill="#93c5fd"/>
+<text x="613.5" y="439.8" text-anchor="middle" font-size="9">36.05</text>
+<rect x="632.0" y="400.1" width="27.0" height="124.9" rx="2" fill="#2563eb"/>
+<text x="645.5" y="393.1" text-anchor="middle" font-size="9">36.13</text>
+<text x="630.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 630.0 560)">MSE + SSIM</text>
+<rect x="700.0" y="371.5" width="27.0" height="153.5" rx="2" fill="#93c5fd"/>
+<text x="713.5" y="364.5" text-anchor="middle" font-size="9">36.18</text>
+<rect x="732.0" y="324.2" width="27.0" height="200.8" rx="2" fill="#2563eb"/>
+<text x="745.5" y="317.2" text-anchor="middle" font-size="9">36.26</text>
+<text x="730.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 730.0 560)">MSE + SSIM + gradient</text>
+<line x1="855.0" y1="525.0" x2="1155.0" y2="525.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="843.0" y="529.0" text-anchor="end" font-size="11" fill="#64748b">0.922</text>
+<line x1="855.0" y1="430.0" x2="1155.0" y2="430.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="843.0" y="434.0" text-anchor="end" font-size="11" fill="#64748b">0.922</text>
+<line x1="855.0" y1="335.0" x2="1155.0" y2="335.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="843.0" y="339.0" text-anchor="end" font-size="11" fill="#64748b">0.923</text>
+<line x1="855.0" y1="240.0" x2="1155.0" y2="240.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="843.0" y="244.0" text-anchor="end" font-size="11" fill="#64748b">0.923</text>
+<line x1="855.0" y1="145.0" x2="1155.0" y2="145.0" stroke="#dbe3ec" stroke-width="1"/>
+<text x="843.0" y="149.0" text-anchor="end" font-size="11" fill="#64748b">0.923</text>
+<line x1="855.0" y1="145.0" x2="855.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<line x1="855.0" y1="525.0" x2="1155.0" y2="525.0" stroke="#64748b" stroke-width="1.5"/>
+<text x="1005.0" y="118.0" text-anchor="middle" font-size="15" font-weight="700">SSIM</text>
+<rect x="875.0" y="265.2" width="27.0" height="259.8" rx="2" fill="#93c5fd"/>
+<text x="888.5" y="258.2" text-anchor="middle" font-size="9">0.923</text>
+<rect x="907.0" y="223.2" width="27.0" height="301.8" rx="2" fill="#2563eb"/>
+<text x="920.5" y="216.2" text-anchor="middle" font-size="9">0.923</text>
+<text x="905.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 905.0 560)">MSE</text>
+<rect x="975.0" y="420.0" width="27.0" height="105.0" rx="2" fill="#93c5fd"/>
+<text x="988.5" y="413.0" text-anchor="middle" font-size="9">0.922</text>
+<rect x="1007.0" y="440.9" width="27.0" height="84.1" rx="2" fill="#2563eb"/>
+<text x="1020.5" y="433.9" text-anchor="middle" font-size="9">0.922</text>
+<text x="1005.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 1005.0 560)">MSE + SSIM</text>
+<rect x="1075.0" y="427.2" width="27.0" height="97.8" rx="2" fill="#93c5fd"/>
+<text x="1088.5" y="420.2" text-anchor="middle" font-size="9">0.922</text>
+<rect x="1107.0" y="446.8" width="27.0" height="78.2" rx="2" fill="#2563eb"/>
+<text x="1120.5" y="439.8" text-anchor="middle" font-size="9">0.922</text>
+<text x="1105.0" y="560.0" text-anchor="middle" font-size="10" transform="rotate(-15 1105.0 560)">MSE + SSIM + gradient</text>
+<rect x="450.0" y="590.0" width="15.0" height="15.0" rx="2" fill="#93c5fd"/>
+<text x="474.0" y="603.0" text-anchor="start" font-size="12">Validation</text>
+<rect x="570.0" y="590.0" width="15.0" height="15.0" rx="2" fill="#2563eb"/>
+<text x="594.0" y="603.0" text-anchor="start" font-size="12">Test</text>
+<text x="600.0" y="632.0" text-anchor="middle" font-size="12" fill="#64748b">Subject-mean results. The held-out test set is reported, not used to choose the loss.</text>
+</svg>

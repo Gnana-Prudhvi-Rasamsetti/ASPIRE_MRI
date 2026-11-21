@@ -1,0 +1,108 @@
+{
+  "model": "unet",
+  "seed": 42,
+  "training_subjects": 326,
+  "validation_subjects": 87,
+  "test_subjects": 87,
+  "device": "cuda",
+  "mixed_precision": true,
+  "selection_rule": "Select the loss configuration using validation subject_mean metrics only; use test metrics for final reporting, not tuning.",
+  "variants": {
+    "mse": {
+      "checkpoint": "checkpoints\\unet\\best.pt",
+      "best_epoch": 44,
+      "validation": {
+        "subject_count": 87,
+        "slice_count": 21445,
+        "slice_mean": {
+          "rmse": 0.019156837763542607,
+          "psnr": 36.36186171914348,
+          "ssim": 0.9230145339588931
+        },
+        "subject_mean": {
+          "rmse": 0.01917567361688173,
+          "psnr": 36.34839610877283,
+          "ssim": 0.9229921431311917
+        }
+      },
+      "test": {
+        "subject_count": 87,
+        "slice_count": 21589,
+        "slice_mean": {
+          "rmse": 0.019160568743856358,
+          "psnr": 36.43985364153174,
+          "ssim": 0.9230625555737154
+        },
+        "subject_mean": {
+          "rmse": 0.019165255477643327,
+          "psnr": 36.42980735909359,
+          "ssim": 0.9231314615482008
+        }
+      }
+    },
+    "mse_ssim": {
+      "checkpoint": "checkpoints\\ablations\\unet_mse_ssim.pt",
+      "best_epoch": 22,
+      "validation": {
+        "subject_count": 87,
+        "slice_count": 21445,
+        "slice_mean": {
+          "rmse": 0.019935510790147448,
+          "psnr": 36.05956255956585,
+          "ssim": 0.9225200949167699
+        },
+        "subject_mean": {
+          "rmse": 0.019955154843547807,
+          "psnr": 36.04596704072417,
+          "ssim": 0.922478716035302
+        }
+      },
+      "test": {
+        "subject_count": 87,
+        "slice_count": 21589,
+        "slice_mean": {
+          "rmse": 0.019942560188221128,
+          "psnr": 36.13693486040124,
+          "ssim": 0.9223479036022797
+        },
+        "subject_mean": {
+          "rmse": 0.01994876025330721,
+          "psnr": 36.12614609128815,
+          "ssim": 0.9224095388244377
+        }
+      }
+    },
+    "mse_ssim_gradient": {
+      "checkpoint": "checkpoints\\ablations\\unet_mse_ssim_gradient.pt",
+      "best_epoch": 34,
+      "validation": {
+        "subject_count": 87,
+        "slice_count": 21445,
+        "slice_mean": {
+          "rmse": 0.019679910510048394,
+          "psnr": 36.18919156955711,
+          "ssim": 0.922500757872016
+        },
+        "subject_mean": {
+          "rmse": 0.01969966728315798,
+          "psnr": 36.17529053883428,
+          "ssim": 0.9224549269277762
+        }
+      },
+      "test": {
+        "subject_count": 87,
+        "slice_count": 21589,
+        "slice_mean": {
+          "rmse": 0.01968496987537232,
+          "psnr": 36.26704859266441,
+          "ssim": 0.9223257651909488
+        },
+        "subject_mean": {
+          "rmse": 0.019690579325955047,
+          "psnr": 36.256377180554935,
+          "ssim": 0.9223900643635988
+        }
+      }
+    }
+  }
+}

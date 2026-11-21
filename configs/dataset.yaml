@@ -1,0 +1,10 @@
+seed: 42
+raw_dir: data/raw/IXI
+processed_dir: data/processed
+splits_dir: data/splits
+slice_size: 128
+train_fraction: 0.70
+validation_fraction: 0.15
+expert_fraction_of_train: 0.80
+noise_levels: [0.02, 0.05, 0.10]
+noise_types: [gaussian, rician, mixed]

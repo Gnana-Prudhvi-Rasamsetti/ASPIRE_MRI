@@ -1,0 +1,70 @@
+﻿{
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 42,
+  "warmup_iterations": 3,
+  "timed_iterations": 20,
+  "results": {
+    "dncnn": {
+      "1": {
+        "parameters": 371137,
+        "latency_seconds": 0.00146821500002261,
+        "images_per_second": 681.0991578104026,
+        "peak_gpu_memory_bytes": 10370560
+      },
+      "8": {
+        "parameters": 371137,
+        "latency_seconds": 0.017744059999859018,
+        "images_per_second": 450.85510306342303,
+        "peak_gpu_memory_bytes": 102841856
+      }
+    },
+    "unet": {
+      "1": {
+        "parameters": 1925025,
+        "latency_seconds": 0.001182890000018233,
+        "images_per_second": 845.3871450300417,
+        "peak_gpu_memory_bytes": 21766656
+      },
+      "8": {
+        "parameters": 1925025,
+        "latency_seconds": 0.005095780000010564,
+        "images_per_second": 1569.9264881889358,
+        "peak_gpu_memory_bytes": 119480832
+      }
+    },
+    "restormer": {
+      "1": {
+        "parameters": 188377,
+        "latency_seconds": 0.006813690000126371,
+        "images_per_second": 146.76335436180005,
+        "peak_gpu_memory_bytes": 25371648
+      },
+      "8": {
+        "parameters": 188377,
+        "latency_seconds": 0.01606655999985378,
+        "images_per_second": 497.92861695800514,
+        "peak_gpu_memory_bytes": 137765888
+      }
+    },
+    "adaptive_fusion": {
+      "1": {
+        "parameters": 2603650,
+        "latency_seconds": 0.01015932000009343,
+        "images_per_second": 98.43178480358957,
+        "peak_gpu_memory_bytes": 36250112
+      },
+      "8": {
+        "parameters": 2603650,
+        "latency_seconds": 0.0389194450001014,
+        "images_per_second": 205.55277702390558,
+        "peak_gpu_memory_bytes": 149565440
+      }
+    }
+  },
+  "batch_sizes": [
+    "1",
+    "8"
+  ],
+  "throughput_formula": "batch_size / latency_seconds",
+  "throughput_corrected_from": "Recorded latency measurements; no GPU rerun required"
+}

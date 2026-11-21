@@ -1,0 +1,817 @@
+{
+  "config": {
+    "split": "test",
+    "seed": 42,
+    "subject_count": 87,
+    "checkpoint": "checkpoints\\adaptive\\best.pt"
+  },
+  "purpose": "Verify intermediate-severity SSIM, compare noisy-input controls, and test whether independent noise seeds caused the dip.",
+  "seed_modes": [
+    "independent",
+    "paired"
+  ],
+  "noise_types": [
+    "gaussian",
+    "rician",
+    "mixed"
+  ],
+  "severity_levels": [
+    0.02,
+    0.03,
+    0.05
+  ],
+  "conditions": {
+    "independent_gaussian_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.017115095974233416,
+          "psnr": 35.352544009644106,
+          "ssim": 0.7863788515366633
+        },
+        "restored": {
+          "rmse": 0.010487564782381137,
+          "psnr": 40.67317441904704,
+          "ssim": 0.9447020784381409
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.017114987144477515,
+          "psnr": 35.35250485381297,
+          "ssim": 0.7863379687701172
+        },
+        "restored": {
+          "rmse": 0.010490234857781762,
+          "psnr": 40.66397260218239,
+          "ssim": 0.9447162346884146
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.00662753119185228,
+        "psnr": 5.320630409402931,
+        "ssim": 0.1583232269014776
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.003131621051579714,
+        "severity_rmse": 0.003729238174855709
+      },
+      "mean_gate_weights": [
+        0.003108249045908451,
+        0.5828989744186401,
+        0.41399234533309937
+      ],
+      "original_report_subject_ssim": 0.9447162346884146,
+      "difference_from_original_report": 0.0
+    },
+    "independent_gaussian_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.025465321597119967,
+          "psnr": 31.900417111251148,
+          "ssim": 0.6810555089422305
+        },
+        "restored": {
+          "rmse": 0.014059751441603858,
+          "psnr": 38.26952072402238,
+          "ssim": 0.9384935446691974
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.025465489860343176,
+          "psnr": 31.900270217817575,
+          "ssim": 0.6810332738423546
+        },
+        "restored": {
+          "rmse": 0.014063378861159824,
+          "psnr": 38.25924098920423,
+          "ssim": 0.9385173347669674
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.011405570155516109,
+        "psnr": 6.36910361277123,
+        "ssim": 0.2574380357269669
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.002467332175001502,
+        "severity_rmse": 0.0030949730426073074
+      },
+      "mean_gate_weights": [
+        0.00392147246748209,
+        0.5872728824615479,
+        0.4088062644004822
+      ],
+      "original_report_subject_ssim": 0.9385173347669674,
+      "difference_from_original_report": 0.0
+    },
+    "independent_gaussian_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.042059402795862844,
+          "psnr": 27.541107878688752,
+          "ssim": 0.5403423883444328
+        },
+        "restored": {
+          "rmse": 0.019618753794706834,
+          "psnr": 35.5322155215409,
+          "ssim": 0.9272882420968432
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.04206014988474466,
+          "psnr": 27.540872513668216,
+          "ssim": 0.5403891828892329
+        },
+        "restored": {
+          "rmse": 0.019623543706807883,
+          "psnr": 35.52112492705629,
+          "ssim": 0.9273312384103296
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.02244064900115601,
+        "psnr": 7.991107642852146,
+        "ssim": 0.3869458537524104
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.00316942878998816,
+        "severity_rmse": 0.003992029000073671
+      },
+      "mean_gate_weights": [
+        0.0058922190219163895,
+        0.5795214176177979,
+        0.41458627581596375
+      ],
+      "original_report_subject_ssim": 0.9273312384103296,
+      "difference_from_original_report": 0.0
+    },
+    "independent_rician_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.02371658979174347,
+          "psnr": 32.51895069924692,
+          "ssim": 0.6044321397121947
+        },
+        "restored": {
+          "rmse": 0.010602532438815272,
+          "psnr": 40.4156262270854,
+          "ssim": 0.9399799952975706
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.023719133696357017,
+          "psnr": 32.51793097588256,
+          "ssim": 0.604346057978771
+        },
+        "restored": {
+          "rmse": 0.010604722952051355,
+          "psnr": 40.408351702494684,
+          "ssim": 0.9400145801690953
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.013114057352928197,
+        "psnr": 7.896675527838475,
+        "ssim": 0.3355478555853759
+      },
+      "noise_detector": {
+        "accuracy": 0.9999536871910095,
+        "severity_mae": 0.0031368285417556763,
+        "severity_rmse": 0.0038077267818152905
+      },
+      "mean_gate_weights": [
+        0.032884590327739716,
+        0.5485336184501648,
+        0.4185817241668701
+      ],
+      "original_report_subject_ssim": 0.9400145801690953,
+      "difference_from_original_report": 0.0
+    },
+    "independent_rician_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.0359250012190054,
+          "psnr": 28.910845959333987,
+          "ssim": 0.5326904132996738
+        },
+        "restored": {
+          "rmse": 0.016652689839169427,
+          "psnr": 35.63393988749125,
+          "ssim": 0.792003007236663
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.03592804037815857,
+          "psnr": 28.910025644813665,
+          "ssim": 0.5326762898673749
+        },
+        "restored": {
+          "rmse": 0.016650624913619228,
+          "psnr": 35.634827121281255,
+          "ssim": 0.7920661254921773
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.019272311379835975,
+        "psnr": 6.723093928157265,
+        "ssim": 0.25931259393698913
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.004079787060618401,
+        "severity_rmse": 0.004729584790766239
+      },
+      "mean_gate_weights": [
+        0.060031305998563766,
+        0.4750932455062866,
+        0.46487560868263245
+      ],
+      "original_report_subject_ssim": 0.7920661254921773,
+      "difference_from_original_report": 0.0
+    },
+    "independent_rician_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.06054445653857029,
+          "psnr": 24.375841202149047,
+          "ssim": 0.45584510341919937
+        },
+        "restored": {
+          "rmse": 0.019860738077498347,
+          "psnr": 35.27125547646626,
+          "ssim": 0.9211857151237522
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.06054806851004053,
+          "psnr": 24.375241934033024,
+          "ssim": 0.45593288241006197
+        },
+        "restored": {
+          "rmse": 0.01986491372246017,
+          "psnr": 35.26133296960545,
+          "ssim": 0.921261332664014
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.04068371846107194,
+        "psnr": 10.895414274317211,
+        "ssim": 0.4653406117045529
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.0023076850920915604,
+        "severity_rmse": 0.003074553795158863
+      },
+      "mean_gate_weights": [
+        0.05845097824931145,
+        0.47525274753570557,
+        0.46629640460014343
+      ],
+      "original_report_subject_ssim": 0.921261332664014,
+      "difference_from_original_report": 0.0
+    },
+    "independent_mixed_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.01703329725670959,
+          "psnr": 35.38283146446469,
+          "ssim": 0.7452022349543446
+        },
+        "restored": {
+          "rmse": 0.008492730502283037,
+          "psnr": 42.379237388127756,
+          "ssim": 0.9452687438793625
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.017032908104667673,
+          "psnr": 35.38300160993893,
+          "ssim": 0.7452225157713246
+        },
+        "restored": {
+          "rmse": 0.008495324923444673,
+          "psnr": 42.371047488094625,
+          "ssim": 0.9452877483892094
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.008540566754426554,
+        "psnr": 6.996405923663069,
+        "ssim": 0.20006650892501798
+      },
+      "noise_detector": {
+        "accuracy": 0.9991199374198914,
+        "severity_mae": 0.003075958229601383,
+        "severity_rmse": 0.0038084860425442457
+      },
+      "mean_gate_weights": [
+        0.003485049121081829,
+        0.550235390663147,
+        0.44627997279167175
+      ],
+      "original_report_subject_ssim": 0.9452877483892094,
+      "difference_from_original_report": 0.0
+    },
+    "independent_mixed_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.025686955624882716,
+          "psnr": 31.813915826153515,
+          "ssim": 0.6752137181696927
+        },
+        "restored": {
+          "rmse": 0.013336422996996434,
+          "psnr": 37.55289676087933,
+          "ssim": 0.8596977822268963
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.02568619496668655,
+          "psnr": 31.81414582376967,
+          "ssim": 0.6752518731412319
+        },
+        "restored": {
+          "rmse": 0.013335877249077416,
+          "psnr": 37.55311508621717,
+          "ssim": 0.8597804512211684
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.012350532627886282,
+        "psnr": 5.738980934725813,
+        "ssim": 0.18448406405720363
+      },
+      "noise_detector": {
+        "accuracy": 0.9993515014648438,
+        "severity_mae": 0.0034597234334796667,
+        "severity_rmse": 0.004176570568233728
+      },
+      "mean_gate_weights": [
+        0.006718914955854416,
+        0.5042206645011902,
+        0.48906126618385315
+      ],
+      "original_report_subject_ssim": 0.8597804512211684,
+      "difference_from_original_report": 0.0
+    },
+    "independent_mixed_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.04310105492389491,
+          "psnr": 27.317547567700537,
+          "ssim": 0.5749609041402557
+        },
+        "restored": {
+          "rmse": 0.016357643141166722,
+          "psnr": 37.025264964482936,
+          "ssim": 0.9308965296482243
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.043099288104006636,
+          "psnr": 27.317879642314914,
+          "ssim": 0.5750235934700929
+        },
+        "restored": {
+          "rmse": 0.01636281450708039,
+          "psnr": 37.0144845130547,
+          "ssim": 0.9309452269210996
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.02674341178272819,
+        "psnr": 9.7077173967824,
+        "ssim": 0.35593562550796864
+      },
+      "noise_detector": {
+        "accuracy": 0.9993515014648438,
+        "severity_mae": 0.0038860973436385393,
+        "severity_rmse": 0.00473470613360405
+      },
+      "mean_gate_weights": [
+        0.007897654548287392,
+        0.5276007056236267,
+        0.4645008146762848
+      ],
+      "original_report_subject_ssim": 0.9309452269210996,
+      "difference_from_original_report": 0.0
+    },
+    "paired_gaussian_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.017117139603455164,
+          "psnr": 35.35148613095874,
+          "ssim": 0.7863495110101579
+        },
+        "restored": {
+          "rmse": 0.01048795476732607,
+          "psnr": 40.67535114124886,
+          "ssim": 0.9446972719443237
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.017117039744574864,
+          "psnr": 35.35144356074834,
+          "ssim": 0.7863095166700484
+        },
+        "restored": {
+          "rmse": 0.010490669609338399,
+          "psnr": 40.6660471885324,
+          "ssim": 0.9447112262420209
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.0066291848361290946,
+        "psnr": 5.32386501029012,
+        "ssim": 0.1583477609341658
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.003125418908894062,
+        "severity_rmse": 0.0037201957311481237
+      },
+      "mean_gate_weights": [
+        0.003105343086645007,
+        0.5829446315765381,
+        0.4139503240585327
+      ]
+    },
+    "paired_gaussian_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.025469731561402326,
+          "psnr": 31.898893661919562,
+          "ssim": 0.6809916336932649
+        },
+        "restored": {
+          "rmse": 0.014060399851116316,
+          "psnr": 38.27058416351823,
+          "ssim": 0.9384912647149204
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.025469872104751302,
+          "psnr": 31.898757401767675,
+          "ssim": 0.6809710776660344
+        },
+        "restored": {
+          "rmse": 0.014064103938172031,
+          "psnr": 38.260201571560685,
+          "ssim": 0.9385147913158387
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.01140933171028601,
+        "psnr": 6.371690501598668,
+        "ssim": 0.2574996310216555
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.0024583518970757723,
+        "severity_rmse": 0.0030773826874792576
+      },
+      "mean_gate_weights": [
+        0.003916515503078699,
+        0.5872650742530823,
+        0.40881839394569397
+      ]
+    },
+    "paired_gaussian_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.042064820110806166,
+          "psnr": 27.539963752399903,
+          "ssim": 0.5403172204992153
+        },
+        "restored": {
+          "rmse": 0.01962111230497298,
+          "psnr": 35.5317022624964,
+          "ssim": 0.9272859922803356
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.042065576593855035,
+          "psnr": 27.539726658965645,
+          "ssim": 0.5403647772147333
+        },
+        "restored": {
+          "rmse": 0.01962604805176963,
+          "psnr": 35.52045267904398,
+          "ssim": 0.9273286087071767
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.022443707805833185,
+        "psnr": 7.9917385100965,
+        "ssim": 0.3869687717811203
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.0031693067867308855,
+        "severity_rmse": 0.003980961162596941
+      },
+      "mean_gate_weights": [
+        0.005876167211681604,
+        0.5795884132385254,
+        0.4145359992980957
+      ]
+    },
+    "paired_rician_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.023716899373824107,
+          "psnr": 32.518848952017265,
+          "ssim": 0.6044280856745611
+        },
+        "restored": {
+          "rmse": 0.010602558485276813,
+          "psnr": 40.41784770081564,
+          "ssim": 0.9399716167243658
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.023719457806533038,
+          "psnr": 32.517824447225344,
+          "ssim": 0.6043417684322101
+        },
+        "restored": {
+          "rmse": 0.01060475468348015,
+          "psnr": 40.410545570446196,
+          "ssim": 0.940006730957659
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.013114340888547293,
+        "psnr": 7.898998748798377,
+        "ssim": 0.3355435310498047
+      },
+      "noise_detector": {
+        "accuracy": 0.9999536871910095,
+        "severity_mae": 0.0031314389780163765,
+        "severity_rmse": 0.003800433361902833
+      },
+      "mean_gate_weights": [
+        0.0328730084002018,
+        0.5484358072280884,
+        0.4186911880970001
+      ]
+    },
+    "paired_rician_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.03592731663247606,
+          "psnr": 28.91026729534442,
+          "ssim": 0.5326768574862879
+        },
+        "restored": {
+          "rmse": 0.016652646757142217,
+          "psnr": 35.633979552815546,
+          "ssim": 0.7920348686553278
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.03593046422782521,
+          "psnr": 28.909421151375856,
+          "ssim": 0.5326625177176895
+        },
+        "restored": {
+          "rmse": 0.01665083865056595,
+          "psnr": 35.63472550546982,
+          "ssim": 0.7920936118512707
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.01927466987533384,
+        "psnr": 6.723712257471128,
+        "ssim": 0.2593580111690399
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.004073105752468109,
+        "severity_rmse": 0.004719656426459551
+      },
+      "mean_gate_weights": [
+        0.06003613397479057,
+        0.47492438554763794,
+        0.46503978967666626
+      ]
+    },
+    "paired_rician_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.06054609128944357,
+          "psnr": 24.375579068535835,
+          "ssim": 0.455831813763604
+        },
+        "restored": {
+          "rmse": 0.019860702255329907,
+          "psnr": 35.27053879099053,
+          "ssim": 0.9211397830760464
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.06055003027067858,
+          "psnr": 24.374933641342167,
+          "ssim": 0.45591881741934376
+        },
+        "restored": {
+          "rmse": 0.01986505699583283,
+          "psnr": 35.26050135312476,
+          "ssim": 0.921215167591573
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.04068538903411366,
+        "psnr": 10.894959722454693,
+        "ssim": 0.4653079693124424
+      },
+      "noise_detector": {
+        "accuracy": 1.0,
+        "severity_mae": 0.002292883349582553,
+        "severity_rmse": 0.0030670163687318563
+      },
+      "mean_gate_weights": [
+        0.05845998600125313,
+        0.4751721918582916,
+        0.46636855602264404
+      ]
+    },
+    "paired_mixed_0.020": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.017032542553816542,
+          "psnr": 35.38323290635516,
+          "ssim": 0.7451964111368765
+        },
+        "restored": {
+          "rmse": 0.008492512289014974,
+          "psnr": 42.378676235363834,
+          "ssim": 0.9452711429104069
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.017032158838131084,
+          "psnr": 35.38340091894741,
+          "ssim": 0.7452162221319558
+        },
+        "restored": {
+          "rmse": 0.008495063712353005,
+          "psnr": 42.370501099662015,
+          "ssim": 0.945290234165853
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.008540030264801568,
+        "psnr": 6.995443329008673,
+        "ssim": 0.2000747317735304
+      },
+      "noise_detector": {
+        "accuracy": 0.9991199374198914,
+        "severity_mae": 0.003074183128774166,
+        "severity_rmse": 0.0038077293429523706
+      },
+      "mean_gate_weights": [
+        0.003485180903226137,
+        0.550140917301178,
+        0.4463733434677124
+      ]
+    },
+    "paired_mixed_0.030": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.025687327505968468,
+          "psnr": 31.813782546048564,
+          "ssim": 0.6751983089209365
+        },
+        "restored": {
+          "rmse": 0.013337868825446693,
+          "psnr": 37.551749089531825,
+          "ssim": 0.8596951589737193
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.025686508076635382,
+          "psnr": 31.81403320296498,
+          "ssim": 0.6752369627249089
+        },
+        "restored": {
+          "rmse": 0.013337435031054255,
+          "psnr": 37.55188452827087,
+          "ssim": 0.8597744604143436
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.012349458680521775,
+        "psnr": 5.73796654348326,
+        "ssim": 0.18449685005278282
+      },
+      "noise_detector": {
+        "accuracy": 0.9993051886558533,
+        "severity_mae": 0.003456534119322896,
+        "severity_rmse": 0.004172647371888161
+      },
+      "mean_gate_weights": [
+        0.006719794124364853,
+        0.5042102932929993,
+        0.48907017707824707
+      ]
+    },
+    "paired_mixed_0.050": {
+      "subject_count": 87,
+      "slice_count": 21589,
+      "slice_mean": {
+        "noisy_input": {
+          "rmse": 0.04310458181043288,
+          "psnr": 27.316838522839554,
+          "ssim": 0.5748904954502806
+        },
+        "restored": {
+          "rmse": 0.016358301762131988,
+          "psnr": 37.023974040200756,
+          "ssim": 0.9308905756331632
+        }
+      },
+      "subject_mean": {
+        "noisy": {
+          "rmse": 0.04310277920758426,
+          "psnr": 27.317178055338903,
+          "ssim": 0.5749549557381325
+        },
+        "restored": {
+          "rmse": 0.01636346564260444,
+          "psnr": 37.0132589972178,
+          "ssim": 0.9309391445819505
+        }
+      },
+      "restoration_change": {
+        "rmse": -0.026746280048300895,
+        "psnr": 9.707135517361202,
+        "ssim": 0.35600008018288265
+      },
+      "noise_detector": {
+        "accuracy": 0.9992588758468628,
+        "severity_mae": 0.0038845064118504524,
+        "severity_rmse": 0.0047291540540754795
+      },
+      "mean_gate_weights": [
+        0.007923223078250885,
+        0.5274867415428162,
+        0.46459031105041504
+      ]
+    }
+  }
+}

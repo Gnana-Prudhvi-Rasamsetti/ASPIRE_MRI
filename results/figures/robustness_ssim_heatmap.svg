@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#1e293b}.muted{fill:#64748b}.grid{stroke:#dbe3ec;stroke-width:1}.axis{stroke:#64748b;stroke-width:1.2}</style>
+<text x="550.0" y="42" text-anchor="middle" font-size="25" font-weight="700">Robustness SSIM overview</text>
+<text x="550.0" y="70" text-anchor="middle" font-size="13" class="muted">Adaptive model · test-set subject means across all corruption types and severity levels</text>
+<text x="327.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.020</text>
+<text x="442.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.030</text>
+<text x="557.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.050</text>
+<text x="672.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.075</text>
+<text x="787.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.100</text>
+<text x="902.5" y="135.0" text-anchor="middle" font-size="13">σ = 0.150</text>
+<text x="250.0" y="205.0" text-anchor="end" font-size="15" fill="#0284c7" font-weight="700">Gaussian</text>
+<rect x="270.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(39,154,199)"/>
+<text x="327.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.945</text>
+<rect x="385.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(41,155,199)"/>
+<text x="442.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.939</text>
+<rect x="500.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(44,156,200)"/>
+<text x="557.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.927</text>
+<rect x="615.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(49,158,202)"/>
+<text x="672.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.913</text>
+<rect x="730.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(53,160,203)"/>
+<text x="787.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.902</text>
+<rect x="845.0" y="155.0" width="112.0" height="87.0" rx="4" fill="rgb(68,167,208)"/>
+<text x="902.5" y="205.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.856</text>
+<text x="250.0" y="295.0" text-anchor="end" font-size="15" fill="#db2777" font-weight="700">Rician</text>
+<rect x="270.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(40,154,199)"/>
+<text x="327.5" y="295.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.940</text>
+<rect x="385.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(89,176,214)"/>
+<text x="442.5" y="295.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.792</text>
+<rect x="500.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(46,157,201)"/>
+<text x="557.5" y="295.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.921</text>
+<rect x="615.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(52,160,203)"/>
+<text x="672.5" y="295.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.905</text>
+<rect x="730.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(55,161,204)"/>
+<text x="787.5" y="295.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.895</text>
+<rect x="845.0" y="245.0" width="112.0" height="87.0" rx="4" fill="rgb(219,234,254)"/>
+<text x="902.5" y="295.0" text-anchor="middle" font-size="15" fill="#1e293b" font-weight="700">0.404</text>
+<text x="250.0" y="385.0" text-anchor="end" font-size="15" fill="#d97706" font-weight="700">Mixed</text>
+<rect x="270.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(39,154,199)"/>
+<text x="327.5" y="385.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.945</text>
+<rect x="385.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(67,166,207)"/>
+<text x="442.5" y="385.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.860</text>
+<rect x="500.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(43,156,200)"/>
+<text x="557.5" y="385.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.931</text>
+<rect x="615.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(54,161,203)"/>
+<text x="672.5" y="385.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.898</text>
+<rect x="730.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(50,159,202)"/>
+<text x="787.5" y="385.0" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="700">0.911</text>
+<rect x="845.0" y="335.0" width="112.0" height="87.0" rx="4" fill="rgb(137,197,228)"/>
+<text x="902.5" y="385.0" text-anchor="middle" font-size="15" fill="#1e293b" font-weight="700">0.650</text>
+<text x="550.0" y="582.0" text-anchor="middle" font-size="12" fill="#64748b">Color scale spans observed SSIM values (0.404–0.945); higher is better.</text>
+</svg>

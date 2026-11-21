@@ -1,0 +1,28 @@
+.venv*/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# IXI source data and generated image pairs
+data/raw/
+data/processed/
+
+# Training artifacts and experiment outputs
+checkpoints/
+logs/
+results/*
+!results/*.json
+!results/figures/
+!results/figures/*.svg
+!results/final_figures/
+!results/final_figures/*.svg
+!results/additional_line_graphs/
+!results/additional_line_graphs/*.svg
+*.log
+
+# Machine-specific editor configuration
+.vscode/
+
+# Streamlit upload leftovers from older demo versions
+app_upload.nii
+app_upload.nii.gz

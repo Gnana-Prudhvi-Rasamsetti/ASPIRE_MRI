@@ -1,0 +1,844 @@
+﻿{
+  "split": "test",
+  "noise_types": [
+    "gaussian",
+    "rician",
+    "mixed"
+  ],
+  "severity_levels": [
+    0.02,
+    0.03,
+    0.05,
+    0.075,
+    0.1,
+    0.15
+  ],
+  "seen_training_levels": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "unseen_or_intermediate_levels": [
+    0.03,
+    0.075,
+    0.15
+  ],
+  "subject_count": 87,
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "checkpoint": "checkpoints\\adaptive\\best.pt",
+  "selection_note": "This fixed robustness grid is for reporting; do not retune from test results.",
+  "conditions": {
+    "gaussian_0.020": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.010487564782381137,
+        "psnr": 40.67317441904704,
+        "ssim": 0.9447020784381409
+      },
+      "subject_mean": {
+        "rmse": 0.010490234857781762,
+        "psnr": 40.66397260218239,
+        "ssim": 0.9447162346884146
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.003131621051579714,
+        "severity_rmse": 0.003729238174855709,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.003108249045908451,
+        0.5828989744186401,
+        0.41399234533309937
+      ]
+    },
+    "gaussian_0.030": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.014059751441603858,
+        "psnr": 38.26952072402238,
+        "ssim": 0.9384935446691974
+      },
+      "subject_mean": {
+        "rmse": 0.014063378861159824,
+        "psnr": 38.25924098920423,
+        "ssim": 0.9385173347669674
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.002467332175001502,
+        "severity_rmse": 0.0030949730426073074,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.00392147246748209,
+        0.5872728824615479,
+        0.4088062644004822
+      ]
+    },
+    "gaussian_0.050": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.019618753794706834,
+        "psnr": 35.5322155215409,
+        "ssim": 0.9272882420968432
+      },
+      "subject_mean": {
+        "rmse": 0.019623543706807883,
+        "psnr": 35.52112492705629,
+        "ssim": 0.9273312384103296
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.00316942878998816,
+        "severity_rmse": 0.003992029000073671,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.0058922190219163895,
+        0.5795214176177979,
+        0.41458627581596375
+      ]
+    },
+    "gaussian_0.075": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.025257063662144096,
+        "psnr": 33.41807438048511,
+        "ssim": 0.9132485750004352
+      },
+      "subject_mean": {
+        "rmse": 0.025263139265982126,
+        "psnr": 33.40646761014954,
+        "ssim": 0.9133097887931656
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.005685729905962944,
+        "severity_rmse": 0.006799595896154642,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.00608473364263773,
+        0.5844098329544067,
+        0.40950483083724976
+      ]
+    },
+    "gaussian_0.100": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.0298043340310255,
+        "psnr": 32.092224155991275,
+        "ssim": 0.9015507169764637
+      },
+      "subject_mean": {
+        "rmse": 0.029811938772298235,
+        "psnr": 32.07971462840476,
+        "ssim": 0.9016315203068935
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.004614073783159256,
+        "severity_rmse": 0.005850705783814192,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.00300948740914464,
+        0.6121283769607544,
+        0.38486209511756897
+      ]
+    },
+    "gaussian_0.150": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.04280391897639532,
+        "psnr": 28.56175836553127,
+        "ssim": 0.8554155442999504
+      },
+      "subject_mean": {
+        "rmse": 0.042814390070782804,
+        "psnr": 28.552185491850327,
+        "ssim": 0.8555441169991663
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            21589,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.020533502101898193,
+        "severity_rmse": 0.02255481667816639,
+        "target_noise_class": "gaussian",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.0001132163597503677,
+        0.7583662271499634,
+        0.2415204793214798
+      ]
+    },
+    "rician_0.020": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.010602532438815272,
+        "psnr": 40.4156262270854,
+        "ssim": 0.9399799952975706
+      },
+      "subject_mean": {
+        "rmse": 0.010604722952051355,
+        "psnr": 40.408351702494684,
+        "ssim": 0.9400145801690953
+      },
+      "noise_characterization": {
+        "accuracy": 0.9999536871910095,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21588,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.0031368285417556763,
+        "severity_rmse": 0.0038077267818152905,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9999536801148733,
+        "target_class_f1": 0.9999768395210412
+      },
+      "mean_gate_weights": [
+        0.032884590327739716,
+        0.5485336184501648,
+        0.4185817241668701
+      ]
+    },
+    "rician_0.030": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.016652689839169427,
+        "psnr": 35.63393988749125,
+        "ssim": 0.792003007236663
+      },
+      "subject_mean": {
+        "rmse": 0.016650624913619228,
+        "psnr": 35.634827121281255,
+        "ssim": 0.7920661254921773
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21589,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.004079787060618401,
+        "severity_rmse": 0.004729584790766239,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.060031305998563766,
+        0.4750932455062866,
+        0.46487560868263245
+      ]
+    },
+    "rician_0.050": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.019860738077498347,
+        "psnr": 35.27125547646626,
+        "ssim": 0.9211857151237522
+      },
+      "subject_mean": {
+        "rmse": 0.01986491372246017,
+        "psnr": 35.26133296960545,
+        "ssim": 0.921261332664014
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21589,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.0023076850920915604,
+        "severity_rmse": 0.003074553795158863,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.05845097824931145,
+        0.47525274753570557,
+        0.46629640460014343
+      ]
+    },
+    "rician_0.075": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.025742150860293814,
+        "psnr": 33.21615839223178,
+        "ssim": 0.9044952713116328
+      },
+      "subject_mean": {
+        "rmse": 0.025746797540185763,
+        "psnr": 33.204691208839954,
+        "ssim": 0.9046241720536138
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21589,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.0066440594382584095,
+        "severity_rmse": 0.007615719456225634,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.04106636717915535,
+        0.5425834059715271,
+        0.41634973883628845
+      ]
+    },
+    "rician_0.100": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.030521143209616467,
+        "psnr": 31.77398225808244,
+        "ssim": 0.8949521970542388
+      },
+      "subject_mean": {
+        "rmse": 0.030527871768130578,
+        "psnr": 31.76214656160856,
+        "ssim": 0.8950744885127221
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21589,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.002784824464470148,
+        "severity_rmse": 0.0036165639758110046,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.03848659247159958,
+        0.5544070601463318,
+        0.40710607171058655
+      ]
+    },
+    "rician_0.150": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.10126594526661216,
+        "psnr": 19.98771210340535,
+        "ssim": 0.4039877489884469
+      },
+      "subject_mean": {
+        "rmse": 0.10124007815096055,
+        "psnr": 19.98948570921346,
+        "ssim": 0.40411787837984275
+      },
+      "noise_characterization": {
+        "accuracy": 1.0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            21589,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "severity_mae": 0.022920716553926468,
+        "severity_rmse": 0.02348095178604126,
+        "target_noise_class": "rician",
+        "target_class_precision": 1.0,
+        "target_class_recall": 1.0,
+        "target_class_f1": 1.0
+      },
+      "mean_gate_weights": [
+        0.05104656144976616,
+        0.5005822777748108,
+        0.4483717978000641
+      ]
+    },
+    "mixed_0.020": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.008492730502283037,
+        "psnr": 42.379237388127756,
+        "ssim": 0.9452687438793625
+      },
+      "subject_mean": {
+        "rmse": 0.008495324923444673,
+        "psnr": 42.371047488094625,
+        "ssim": 0.9452877483892094
+      },
+      "noise_characterization": {
+        "accuracy": 0.9991199374198914,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            21570
+          ]
+        ],
+        "severity_mae": 0.003075958229601383,
+        "severity_rmse": 0.0038084860425442457,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9991199221825929,
+        "target_class_f1": 0.9995597673718113
+      },
+      "mean_gate_weights": [
+        0.003485049121081829,
+        0.550235390663147,
+        0.44627997279167175
+      ]
+    },
+    "mixed_0.030": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.013336422996996434,
+        "psnr": 37.55289676087933,
+        "ssim": 0.8596977822268963
+      },
+      "subject_mean": {
+        "rmse": 0.013335877249077416,
+        "psnr": 37.55311508621717,
+        "ssim": 0.8597804512211684
+      },
+      "noise_characterization": {
+        "accuracy": 0.9993515014648438,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            21575
+          ]
+        ],
+        "severity_mae": 0.0034597234334796667,
+        "severity_rmse": 0.004176570568233728,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9993515216082264,
+        "target_class_f1": 0.9996756556389584
+      },
+      "mean_gate_weights": [
+        0.006718914955854416,
+        0.5042206645011902,
+        0.48906126618385315
+      ]
+    },
+    "mixed_0.050": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.016357643141166722,
+        "psnr": 37.025264964482936,
+        "ssim": 0.9308965296482243
+      },
+      "subject_mean": {
+        "rmse": 0.01636281450708039,
+        "psnr": 37.0144845130547,
+        "ssim": 0.9309452269210996
+      },
+      "noise_characterization": {
+        "accuracy": 0.9993515014648438,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            21575
+          ]
+        ],
+        "severity_mae": 0.0038860973436385393,
+        "severity_rmse": 0.00473470613360405,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9993515216082264,
+        "target_class_f1": 0.9996756556389584
+      },
+      "mean_gate_weights": [
+        0.007897654548287392,
+        0.5276007056236267,
+        0.4645008146762848
+      ]
+    },
+    "mixed_0.075": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.022724389926158522,
+        "psnr": 33.08664654927839,
+        "ssim": 0.8976169135926237
+      },
+      "subject_mean": {
+        "rmse": 0.022722177429100456,
+        "psnr": 33.087261370094886,
+        "ssim": 0.8977785523939422
+      },
+      "noise_characterization": {
+        "accuracy": 0.9993051886558533,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            21574
+          ]
+        ],
+        "severity_mae": 0.006180083844810724,
+        "severity_rmse": 0.0072402930818498135,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9993052017230998,
+        "target_class_f1": 0.9996524801334478
+      },
+      "mean_gate_weights": [
+        0.007797367870807648,
+        0.5562588572502136,
+        0.4359436333179474
+      ]
+    },
+    "mixed_0.100": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.025439353819241096,
+        "psnr": 33.39287153589725,
+        "ssim": 0.9106965891140654
+      },
+      "subject_mean": {
+        "rmse": 0.025446684420288586,
+        "psnr": 33.3811370307472,
+        "ssim": 0.9107856872125489
+      },
+      "noise_characterization": {
+        "accuracy": 0.9990736246109009,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            20,
+            21569
+          ]
+        ],
+        "severity_mae": 0.004799636546522379,
+        "severity_rmse": 0.0058874390088021755,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9990736022974663,
+        "target_class_f1": 0.9995365864961305
+      },
+      "mean_gate_weights": [
+        0.008437806740403175,
+        0.5613515973091125,
+        0.43021073937416077
+      ]
+    },
+    "mixed_0.150": {
+      "slice_count": 21589,
+      "subject_count": 87,
+      "slice_mean": {
+        "rmse": 0.07081071442831131,
+        "psnr": 23.117136219718546,
+        "ssim": 0.6502444427906486
+      },
+      "subject_mean": {
+        "rmse": 0.0707911338074198,
+        "psnr": 23.119161281465967,
+        "ssim": 0.6504163059171016
+      },
+      "noise_characterization": {
+        "accuracy": 0.9985177516937256,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            21557
+          ]
+        ],
+        "severity_mae": 0.021635159850120544,
+        "severity_rmse": 0.022499356418848038,
+        "target_noise_class": "mixed",
+        "target_class_precision": 1.0,
+        "target_class_recall": 0.9985177636759461,
+        "target_class_f1": 0.9992583321744773
+      },
+      "mean_gate_weights": [
+        0.009332655929028988,
+        0.5138353705406189,
+        0.47683167457580566
+      ]
+    }
+  },
+  "detector_metric_note": "Per-condition precision, recall, and F1 are reported for the condition class; macro averages are omitted because the other two true classes are absent in each individual condition."
+}

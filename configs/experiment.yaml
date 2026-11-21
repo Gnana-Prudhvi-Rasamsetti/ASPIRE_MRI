@@ -1,0 +1,8 @@
+experiments:
+  independent_models: [dncnn, unet, restormer]
+  fusion_baselines: [dncnn, unet, restormer, equal_weight, adaptive]
+  loss_ablations:
+    mse: {mse: 1.0, ssim: 0.0, gradient: 0.0}
+    mse_ssim: {mse: 1.0, ssim: 0.2, gradient: 0.0}
+    mse_ssim_gradient: {mse: 1.0, ssim: 0.2, gradient: 0.1}
+  unseen_noise_levels: [0.03, 0.075, 0.15]

@@ -1,0 +1,15 @@
+# Pyrefly workspace configuration for ASPIRE-MRI
+project-includes = ["**/*.py"]
+search-path = ["."]
+
+# Explicit site-package paths including user-site where PyTorch is installed for Python 3.13
+site-package-path = [
+    "C:/Deep Learning/DL_Project_Final/.venv-gpu/Lib/site-packages",
+    "C:/Users/PRUDHVI/AppData/Roaming/Python/Python313/site-packages",
+    "C:/Program Files/Python313/Lib/site-packages",
+]
+
+# Point Pyrefly directly to the project's GPU virtual environment
+python-interpreter-path = "C:/Deep Learning/DL_Project_Final/.venv-gpu/Scripts/python.exe"
+python-version = "3.13"
+python-platform = "win32"

@@ -1,0 +1,16 @@
+# ASPIRE-MRI dependencies. Install with: python -m pip install -r requirements.txt
+# Dataset is not bundled. Download IXI T1 volumes from https://brain-development.org/ixi-dataset/
+# Put extracted .nii.gz files in data/raw/IXI/, then run:
+#   python -m datasets.prepare data/raw/IXI data/splits
+#   python -m datasets.slice_extraction data/raw/IXI data/processed/clean
+#   python -m datasets.generate_pairs data/processed/clean data/processed --progress-every 100
+#   python -m datasets.verify_preprocessing
+torch>=2.2
+numpy>=1.26
+nibabel>=5.2
+PyYAML>=6.0
+scikit-image>=0.22
+matplotlib>=3.8
+streamlit>=1.32
+tensorboard>=2.16
+pytest>=8.0
