@@ -101,6 +101,11 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--no-amp", action="store_true", help="Disable mixed-precision inference.")
+    parser.add_argument(
+        "--include-fine-tuned",
+        action="store_true",
+        help="Also evaluate the optional end-to-end fine-tuned checkpoint.",
+    )
     args = parser.parse_args()
 
     seed_everything(args.seed)
@@ -109,10 +114,9 @@ def main() -> None:
     loader = make_loader(args.clean_root, subjects, args.batch_size, args.seed, False, args.num_workers)
     use_amp = device.type == "cuda" and not args.no_amp
 
-    checkpoints = {
-        "frozen_adaptive": checkpoint_path("adaptive"),
-        "fine_tuned": checkpoint_path("fine_tune"),
-    }
+    checkpoints = {"frozen_adaptive": checkpoint_path("adaptive")}
+    if args.include_fine_tuned:
+        checkpoints["fine_tuned"] = checkpoint_path("fine_tune")
     report = {
         "split": args.split,
         "subject_count": len(subjects),
