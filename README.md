@@ -81,6 +81,17 @@ The automated PowerShell training runners use `.venv-gpu\Scripts\python.exe`. Th
 
 The dataset is intentionally not bundled in this share-ready repository. Download the official **T1 images (all images)** archive from [the IXI dataset page](https://brain-development.org/ixi-dataset/), extract its T1 `.nii` or `.nii.gz` volumes into `data/raw/IXI/`, and keep other modalities out of that folder. The dataset page identifies the data as CC BY-SA 3.0 and requests source acknowledgment; preserve that attribution in reports and redistributed derivatives. Preparation and extraction accept filenames ending in `-T1`. Run the following in order afterward.
 
+The current local workspace contains 581 T1 NIfTI volumes. Preprocessing produced 143,705 normalized 128 × 128 clean slices and one deterministic synthetic noisy counterpart for each slice: 47,590 Gaussian, 47,789 Rician, and 48,326 mixed-noise slices. Raw volumes are under `data/raw/IXI/`; clean arrays are under `data/processed/clean/<subject>/`; noisy arrays are under one of `data/processed/{gaussian,rician,mixed}/<subject>/`. These files are ignored by Git and are not in the GitHub repository. `.nii.gz` files are 3-D volumes and `.npy` files are arrays, so file Explorer will not show them as ordinary image thumbnails.
+
+To export an example processed slice as a viewable PNG, run this from the project root:
+
+```powershell
+.\.venv-gpu\Scripts\python.exe -c "import numpy as np, matplotlib.pyplot as plt; plt.imsave(r'results\clean_slice_preview.png', np.load(r'data\processed\clean\IXI002-Guys-0828-T1\axial_000.npy'), cmap='gray', vmin=0, vmax=1)"
+.\.venv-gpu\Scripts\python.exe -c "import numpy as np, matplotlib.pyplot as plt; plt.imsave(r'results\noisy_slice_preview.png', np.load(r'data\processed\rician\IXI002-Guys-0828-T1\axial_000_noisy.npy'), cmap='gray', vmin=0, vmax=1)"
+```
+
+The saved previews appear as normal PNGs under `results/` and remain local rather than being committed with the licensed source data.
+
 ### 1. Make leakage-safe subject partitions
 
 ```powershell
@@ -272,7 +283,7 @@ After adaptive training:
 .\.venv-gpu\Scripts\python.exe -m streamlit run app\streamlit_app.py --server.address 127.0.0.1
 ```
 
-Run the command from the repository root so the GPU environment and project dependencies are used. The app also adds the repository root to Python's import path, caches the loaded checkpoint and preprocessed uploads across Streamlit reruns, and uses CUDA when available. Upload a NIfTI volume, provide `checkpoints/adaptive/best.pt`, select a slice, and inspect all three expert outputs, the adaptive restoration, labeled noise probabilities, predicted severity, and expert gate weights. Upload a clean reference with matching geometry to see PSNR and SSIM for the selected slice. It is a research visualization tool only.
+Run the command from the repository root so the GPU environment and project dependencies are used. The app adds the repository root to Python's import path, caches the loaded checkpoint and preprocessed uploads across Streamlit reruns, and uses CUDA when available. Upload a clean IXI T1 NIfTI volume and keep the default **Simulate synthetic noise** mode to view the clean slice, selected synthetic corruption, adaptive restoration, and before/after metrics. Choose Gaussian, Rician, or mixed noise and a severity from the available grid. The displayed corruption is a controlled demonstration, not a model of every real scanner-noise process. You can instead choose **Use this volume as-is** for an already noisy input and optionally upload a matching clean reference. The demo also shows all three expert outputs, labeled noise probabilities, predicted severity, and expert gate weights. It is a research visualization tool only.
 
 ## Troubleshooting
 
