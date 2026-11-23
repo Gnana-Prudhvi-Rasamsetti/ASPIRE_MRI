@@ -269,10 +269,10 @@ Figures are available in [`results/figures/`](results/figures/): [test model com
 After adaptive training:
 
 ```powershell
-streamlit run app/streamlit_app.py
+.\.venv-gpu\Scripts\python.exe -m streamlit run app\streamlit_app.py --server.address 127.0.0.1
 ```
 
-Upload a NIfTI volume, provide `checkpoints/adaptive/best.pt`, select a slice, and inspect all three expert outputs, the adaptive restoration, noise probabilities, predicted severity, and gating weights. Upload a clean reference with matching geometry to see PSNR and SSIM. It is a research visualization tool only.
+Run the command from the repository root so the GPU environment and project dependencies are used. The app also adds the repository root to Python's import path, caches the loaded checkpoint and preprocessed uploads across Streamlit reruns, and uses CUDA when available. Upload a NIfTI volume, provide `checkpoints/adaptive/best.pt`, select a slice, and inspect all three expert outputs, the adaptive restoration, labeled noise probabilities, predicted severity, and expert gate weights. Upload a clean reference with matching geometry to see PSNR and SSIM for the selected slice. It is a research visualization tool only.
 
 ## Troubleshooting
 
